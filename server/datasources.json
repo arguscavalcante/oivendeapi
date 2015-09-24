@@ -1,0 +1,40 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "geo": {
+    "name": "geo",
+    "connector": "rest",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://maps.googleapis.com/maps/api/geocode/{format=json}",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          },
+          "query": {
+            "address": "{street},{city},{zipcode}",
+            "sensor": "{sensor=false}"
+          },
+          "responsePath": "$.results[0].geometry.location"
+        },
+        "functions": {
+          "geocode": [
+            "street",
+            "city",
+            "zipcode"
+          ]
+        }
+      }
+    ]
+  },
+  "mongolab": {
+    "url": "mongodb://teste:teste@ds041053.mongolab.com:41053/IbmCloud_htshpa56_e0mud2hj",
+    "name": "mongolab",
+    "connector": "mongodb",
+    "debud": "true"
+  }
+}

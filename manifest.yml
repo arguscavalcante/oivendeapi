@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: oivendeapi1
+  host: oivendeapi1
+  disk_quota: 1024M

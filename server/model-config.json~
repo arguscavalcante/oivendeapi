@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "./models"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Car": {
+    "dataSource": "db"
+  },
+  "Customer": {
+    "dataSource": "db"
+  },
+  "Inventory": {
+    "dataSource": "db"
+  },
+  "Location": {
+    "dataSource": "db"
+  },
+  "Note": {
+    "dataSource": "db"
+  },
+  "Contato": {
+    "dataSource": "mongolab",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Modem": {
+    "dataSource": "mongolab",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Campanha": {
+    "dataSource": "mongolab",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Instalacao": {
+    "dataSource": "mongolab",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Disponibilidade": {
+    "dataSource": "mongolab",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+
+}
